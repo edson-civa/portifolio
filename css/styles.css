@@ -1,0 +1,146 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #121212;
+}
+
+main {
+    padding-top: 100px;                 
+}
+
+.cabecalho {
+    position: fixed; 
+    width: 100%;
+    height: 100px;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    color: #00ff88;
+    padding-left: 20px; 
+}
+
+.nome {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.titulo {
+    margin-left: 50px; 
+    font-size: 20px;
+}
+
+.button {
+    background-color: #017740;
+    color: white;
+    padding: 14px 15px;
+    margin: 0px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #017740;
+    transition: all 0.3s ease;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    
+}
+
+.button:hover{
+    box-shadow: 0 8px 16px rgba#b0c2b9;
+    background-color: #00ff88;
+    color: black;
+}
+
+nav {
+    margin-left: auto; 
+    margin-right: 100px; 
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #dfebe9;
+}
+
+.titulo-projetos {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+
+}
+
+.projeto {
+    margin-left: 100px;
+}
+
+main {
+    padding-top: 200px;
+    color: white;
+}
+
+.projeto {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.projeto-img {
+    width: 700px;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.descricao h2 {
+    font-size: 35px;
+    color: #00ff88;
+}
+
+.descricao {
+    max-height: 200px;
+    font-size: 20px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.botao-github {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10;
+    padding: 8px 20px 8px 5px;
+    
+
+    background-color: #1a1a1a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.botao-github:hover {
+    background-color: #00ff88;
+    color: #000;
+}
+
+.logo-git {
+    width: 50px;
+    height: 50px;
+    margin-right: 0px;
+    object-fit: contain;
+    display: block;
+}
