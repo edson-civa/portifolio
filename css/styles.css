@@ -5,8 +5,16 @@ html, body {
     background-color: #121212;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 main {
-    padding-top: 100px;                 
+    padding-top: 200px;  
+    color: white;
+    flex: 1;               
 }
 
 .cabecalho {
@@ -82,17 +90,10 @@ nav a {
 
 }
 
-
-main {
-    padding-top: 200px;
-    color: white;
-}
-
 .projeto {
     display: flex;
     gap: 20px;
-    margin-bottom: 40px;
-    margin-left: 100px;
+
 }
 
 .bloco-pai {
@@ -100,35 +101,37 @@ main {
     flex-direction: row; /* Alinha lado a lado */
     align-items: flex-start;
     gap: 1rem; /* Espaço entre imagem e texto */
-    margin-top: 1rem;
-}
-
-.bloco-imagem img {
-    max-width: 100px;
-    height: auto;
+    margin: 1rem;
     border-radius: 10px;
 }
 
-/* .projeto-img {
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-    max-width: 70vw;
-    border-radius: 10px;
-    margin-left: 0;
-    height: auto;
-} */
+.bloco-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projeto-img {
+    max-width: 80%;
+    /* height: auto; */
+
+    
+}
+
+
 
 .descricao h2 {
     font-size: 35px;
     color: #00ff88;
     flex: 1;
+    margin-top: 0px;
 }
 
 .descricao {
-    max-height: 200px;
     font-size: 20px;
-    margin: 0 5vw;
+    margin: 0 2vw;
+    max-width: 50%;
+    padding-right: 10px;
 }
 
 .botao-github {
@@ -164,6 +167,140 @@ main {
 .menu {
     display: flex;
     gap: 12px;
+}
+
+/* pagina inicial */
+
+.subtitulo {
+    text-align: center;
+    font-family: 'sora', sans-serif;
+    font-size: 30px;
+    color: #00ff88;
+}
+
+.texto-inicio {
+    max-width: 75%;
+    font-size: 24px;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 100px;
+}
+
+/* pagina de contato */
+.formulario {
+    width: 100%;
+    max-width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.formulario form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    width: 80%;
+    margin-top: 10px;
+    padding: 10%;
+    font-size: 1em;
+    background-color: #3b3a3a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.main-acima h2 {
+    color: #00ff88;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: 'sora', sans-serif;
+}
+
+label {
+    color: #00ff88;
+    font-size: 20px;
+    font-family: 'inter', sans-serif;
+    
+}
+
+.botao-formulario {
+    background-color: #017740;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    height: 25px;
+}
+
+.main-acima {
+    padding-top: 100px;
+}
+
+.container-dados {
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;   
+}
+
+.container-dados h2 {
+    font-size: 25px;
+    font-family: 'sora', sans-serif;
+}
+
+.container-dados ul {
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+    padding: 0px;
+    color: #eeee;
+}
+
+.container-dados ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #e0e0e0;
+}
+
+.container-dados ul li a:hover {
+    color: #00ff88;
+}
+
+/* pagina sobre */
+
+.container-sobre {
+    max-width: 700px;
+    width: 100%;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+.titulo-sobre {
+    color: #00ff88;
+    font-size: 26px;
+    font-family: 'sora', sans-serif;
+    padding-left: 20px;
+    margin-bottom: 16px;
+
+}
+
+.texto-sobre {
+    color: #e0e0e0;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'inter', sans-serif;
+}
+
+footer {
+    color: #e0e0e0;
+    text-align: center;
+    background-color: #0e0e0e;
+    padding: 20px;
 }
 
 /* Media query para telas menores */
